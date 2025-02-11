@@ -12,10 +12,10 @@ def Hosth():
 
 def main():
     pygame.init()
-    mhundo = "C:\\Users\\Hellenilda\\Documents\\Algoritmos\\Python\\Jingle Grand Hero 24-11\\Mundos\\"
-    sprite = "C:\\Users\\Hellenilda\\Documents\\Algoritmos\\Python\\Jingle Grand Hero 24-11\\sprites\\"
-    sons = "C:\\Users\\Hellenilda\\Documents\\Algoritmos\\Python\\Jingle Grand Hero 24-11\\sons\\"
-    pontuacaoAT = "C:\\Users\\Hellenilda\\Documents\\Algoritmos\\Python\\Jingle Grand Hero 24-11\\resultado\\"
+    mhundo = "/home/hellenilda/Documentos/Algoritmos/Python/JingleGrandHero-1.0/Mundos/"
+    sprite = "/home/hellenilda/Documentos/Algoritmos/Python/JingleGrandHero-1.0/sprites/"
+    sons = "/home/hellenilda/Documentos/Algoritmos/Python/JingleGrandHero-1.0/sons/"
+    pontuacaoAT = "/home/hellenilda/Documentos/Algoritmos/Python/JingleGrandHero-1.0/resultado/"
 
     tela = pygame.display.set_mode((1280, 720))
     pygame.display.set_caption("Jingle Grand Hero")
@@ -5717,10 +5717,10 @@ def main():
                                 input_texto="", fonte=gerarFonte(5), corBase="#FFFAFA", corSobreposicao="#A9A9A9")
             poun.changeColor(botaoOPCOES)
             poun.update(tela)
-            t4 = gerarFonte(20).render("Pontuação da Atual", True, "Black")
+            t4 = gerarFonte(20).render("Pontuação Atual", True, "Black")
             retanguloDesenvolvedores = t4.get_rect(center=(1045, 543))
             tela.blit(t4, retanguloDesenvolvedores)
-            with open('C:\\Users\\Hellenilda\\Documents\\Algoritmos\\Python\\Jingle Grand Hero 24-11\\resultado\\pontuacaoAtual.txt','r') as arquivoAtual:
+            with open('/home/hellenilda/Documentos/Algoritmos/Python/JingleGrandHero-1.0/resultado/pontuacaoAtual.txt','r') as arquivoAtual:
                 pp = arquivoAtual.read()
                 t5 = gerarFonte(80).render( pp , True, "white")
                 retanguloDesenvolvedores = t5.get_rect(center=(1040, 650))

@@ -2,7 +2,8 @@ from tkinter  import *
 from tkinter import Tk, ttk
 import tkinter as tk
 from traceback import print_list 
-sprite = "C:\\Users\\Hellenilda\\Documents\\Algoritmos\\Python\\Jingle Grand Hero 24-11\\sprites\\"
+
+sprite = "/home/hellenilda/Documentos/Algoritmos/Python/JingleGrandHero-1.0/sprites/"
 tel = Tk()
 tel.geometry("1280x720")
 tel.title("LOGIN")
@@ -40,7 +41,7 @@ def entrar():
     SS = senha.get()
     NN = name.get()  
     try:
-        with open(f'C:\\Users\\Hellenilda\\Documents\\Algoritmos\\Python\\Jingle Grand Hero 24-11\\resultado\\LOGINS\\{NN}.txt', 'r') as checke:
+        with open(f'/home/hellenilda/Documentos/Algoritmos/Python/JingleGrandHero-1.0/resultado/LOGINS/{NN}.txt', 'r') as checke:
             sen = checke.read()
             print(f'Nome | {NN} e senha | {sen}')
             if sen == SS:
@@ -72,7 +73,7 @@ def create_login():
         print('Nome : ', namber)
         print('Senha : ', password)
 
-        with open(f'C:\\Users\\Hellenilda\\Documents\\Algoritmos\\Python\\Jingle Grand Hero 24-11\\20-11-2022\\resultado\\LOGINS\\{namber}.txt', 'w') as createNamber:
+        with open(f'/home/hellenilda/Documentos/Algoritmos/Python/JingleGrandHero-1.0/resultado/LOGINS/{namber}.txt', 'w') as createNamber:
             createNamber.write(password)
             print("Conta criada !!")
             janela.destroy()

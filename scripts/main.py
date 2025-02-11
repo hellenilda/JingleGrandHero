@@ -1,11 +1,11 @@
 import sys
 import platform
-from PySide2 import QtCore, QtGui, QtWidgets
-from PySide2.QtCore import (QCoreApplication, QPropertyAnimation, QDate, QDateTime, 
+from PySide6 import QtCore, QtGui, QtWidgets
+from PySide6.QtCore import (QCoreApplication, QPropertyAnimation, QDate, QDateTime, 
 QMetaObject, QObject, QPoint, QRect, QSize, QTime, QUrl, Qt, QEvent)
-from PySide2.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
+from PySide6.QtGui import (QBrush, QColor, QConicalGradient, QCursor,
  QFont, QFontDatabase, QIcon, QKeySequence, QLinearGradient, QPalette, QPainter, QPixmap, QRadialGradient)
-from PySide2.QtWidgets import *
+from PySide6.QtWidgets import *
 from pygame import mixer 
 
 
@@ -52,7 +52,7 @@ class SplashScreen(QMainWindow):
 
         if counter > 100:
             mixer.init()
-            mixer.music.load("C:\\Users\\Hellenilda\\Documents\\Algoritmos\\Python\\Jingle Grand Hero 24-11\\sons\\inicio.mp3")
+            mixer.music.load("/home/hellenilda/Documentos/Algoritmos/Python/JingleGrandHero-1.0/sons/inicio.mp3")
             mixer.music.set_volume(0.7)
             mixer.music.play()
             # STOP TIMER
