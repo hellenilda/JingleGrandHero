@@ -2,10 +2,10 @@ import pygame, random, sys, pyautogui, os
 from button import Button
 import threading as th
 from tkinter import messagebox
+import getpass
 import socket
-import threading as th
 
-usuario = os.getlogin()
+usuario = getpass.getuser()
 
 def Hosth():
     messagebox.showinfo("Saudações",f"Seja muito bem vindo ao mundo Jingle Grand Hero caro {usuario}")
