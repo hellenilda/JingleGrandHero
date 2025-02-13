@@ -2,7 +2,7 @@
 
 Jingle Grand Hero foi um jogo desenvolvido para a matéria de Estruturas de Dados durante o ensino técnico. Este repositório não é direcionado para atualizações, mas sim para marcar o nosso primeiro jogo desenvolvido completamente, que é tão especial para nós. Por isso, ignore qualquer erro e "gambiarra".
 
-Se quiser ficar por dentro dos nossos próximos jogos, segue o repositório:
+Se quiser ficar por dentro dos nossos próximos jogos, segue o repositório: [Fragments of Fate](https://github.com/hellenilda/FragmentsOfFate)
 
 ---
 
