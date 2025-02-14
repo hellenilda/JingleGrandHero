@@ -12,10 +12,10 @@ def Hosth():
 
 def main():
     pygame.init()
-    mhundo = "/home/hellenilda/Documentos/Algoritmos/Python/JingleGrandHero-1.0/Mundos/"
-    sprite = "/home/hellenilda/Documentos/Algoritmos/Python/JingleGrandHero-1.0/sprites/"
-    sons = "/home/hellenilda/Documentos/Algoritmos/Python/JingleGrandHero-1.0/sons/"
-    pontuacaoAT = "/home/hellenilda/Documentos/Algoritmos/Python/JingleGrandHero-1.0/resultado/"
+    mhundo = "./Mundos/"
+    sprite = "./sprites/"
+    sons = "./sons/"
+    pontuacaoAT = "./resultado/"
 
     tela = pygame.display.set_mode((1280, 720))
     pygame.display.set_caption("Jingle Grand Hero")
@@ -5720,7 +5720,7 @@ def main():
             t4 = gerarFonte(20).render("Pontuação Atual", True, "Black")
             retanguloDesenvolvedores = t4.get_rect(center=(1045, 543))
             tela.blit(t4, retanguloDesenvolvedores)
-            with open('/home/hellenilda/Documentos/Algoritmos/Python/JingleGrandHero-1.0/resultado/pontuacaoAtual.txt','r') as arquivoAtual:
+            with open('./resultado/pontuacaoAtual.txt','r') as arquivoAtual:
                 pp = arquivoAtual.read()
                 t5 = gerarFonte(80).render( pp , True, "white")
                 retanguloDesenvolvedores = t5.get_rect(center=(1040, 650))

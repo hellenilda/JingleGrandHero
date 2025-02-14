@@ -52,7 +52,7 @@ class SplashScreen(QMainWindow):
 
         if counter > 100:
             mixer.init()
-            mixer.music.load("/home/hellenilda/Documentos/Algoritmos/Python/JingleGrandHero-1.0/sons/inicio.mp3")
+            mixer.music.load("./sons/inicio.mp3")
             mixer.music.set_volume(0.7)
             mixer.music.play()
             # STOP TIMER

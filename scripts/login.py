@@ -3,7 +3,7 @@ from tkinter import Tk, ttk
 import tkinter as tk
 from traceback import print_list 
 
-sprite = "/home/hellenilda/Documentos/Algoritmos/Python/JingleGrandHero-1.0/sprites/"
+sprite = "./sprites/"
 tel = Tk()
 tel.geometry("1280x720")
 tel.title("LOGIN")
@@ -41,7 +41,7 @@ def entrar():
     SS = senha.get()
     NN = name.get()  
     try:
-        with open(f'/home/hellenilda/Documentos/Algoritmos/Python/JingleGrandHero-1.0/resultado/LOGINS/{NN}.txt', 'r') as checke:
+        with open(f'./resultado/LOGINS/{NN}.txt', 'r') as checke:
             sen = checke.read()
             print(f'Nome | {NN} e senha | {sen}')
             if sen == SS:
@@ -73,7 +73,7 @@ def create_login():
         print('Nome : ', namber)
         print('Senha : ', password)
 
-        with open(f'/home/hellenilda/Documentos/Algoritmos/Python/JingleGrandHero-1.0/resultado/LOGINS/{namber}.txt', 'w') as createNamber:
+        with open(f'./resultado/LOGINS/{namber}.txt', 'w') as createNamber:
             createNamber.write(password)
             print("Conta criada !!")
             janela.destroy()
